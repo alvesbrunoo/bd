@@ -12,14 +12,14 @@ public class Calculo {
             double numero2 = Double.parseDouble(scanner.nextLine());
 
             double resultado = numero1 / numero2;
-            System.out.println("Resultado da divisão: " + resultado);
+            System.out.println("Resultado: " + resultado);
 
         } catch (ArithmeticException e) {
-            System.out.println("Erro: Divisão por zero não é permitida.");
+            System.out.println("Divisão por zero não é permitida.");
         } catch (NumberFormatException e) {
-            System.out.println("Erro: Você deve inserir apenas números válidos.");
+            System.out.println("Apenas números válidos.");
         } catch (Exception e) {
-            System.out.println("Ocorreu um erro inesperado: " + e.getMessage());
+            System.out.println("Erro inesperado: " + e.getMessage());
         } finally {
             scanner.close();
         }
