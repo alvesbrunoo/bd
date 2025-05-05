@@ -10,7 +10,7 @@ public class Produto {
     public void vender(int quantidade) throws EstoqueInsuficienteException {
         if (quantidade > estoque) {
             throw new EstoqueInsuficienteException(
-                "Estoque insuficiente para o produto \"" + nome + "\". Estoque atual: " + estoque
+                "Estoque insuficiente \"" + nome + "\". Estoque atual: " + estoque
             );
         }
         estoque -= quantidade;
